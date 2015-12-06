@@ -18,49 +18,41 @@ public class Classroom implements IClassroom {
 
 	@Override
 	public int roomSize() {
-		// TODO Auto-generated method stub
-		return roomSize;
+		return this.roomSize;
 	}
 
 	@Override
 	public boolean isClassroom() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
 	public boolean isLectureHall() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean isComputerLab() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
 		return "Classroom";
 	}
 
 	@Override
 	public int getRoomNumber() {
-		// TODO Auto-generated method stub
-		return roomNum;
+		return this.roomNum;
 	}
 
 	@Override
 	public DeskType getDeskType() {
-		// TODO Auto-generated method stub
-		return dtype;
+		return this.dtype;
 	}
 
 	@Override
 	public void setDeskType(DeskType t) {
-		// TODO Auto-generated method stub
 		this.dtype = t;
 	}
 

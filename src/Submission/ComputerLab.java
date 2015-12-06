@@ -4,63 +4,52 @@ import DontChange.ComputerType;
 import DontChange.IComputerLab;
 import DontChange.IRoom;
 
-public class ComputerLab implements IComputerLab{
+public class ComputerLab extends Room implements IComputerLab{
 
-	private int roomNum;
-    private int roomSize;
     private ComputerType ctype;
     
     ComputerLab(int roomNum,int roomSize, ComputerType ctype){
-    	this.roomNum = roomNum;
-    	this.roomSize = roomSize;
+    	super(roomNum, roomSize);
     	this.ctype = ctype;
     }
 
 	@Override
 	public int roomSize() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.roomSize;
 	}
 
 	@Override
 	public boolean isClassroom() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean isLectureHall() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean isComputerLab() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Computer Lab";
 	}
 
 	@Override
 	public int getRoomNumber() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.roomNum;
 	}
 
 	@Override
 	public ComputerType getComputerType() {
-		// TODO Auto-generated method stub
-		return ctype;
+		return this.ctype;
 	}
 
 	@Override
 	public void setComputerType(ComputerType t) {
-		// TODO Auto-generated method stub
 		this.ctype = t;
 	}
 	
